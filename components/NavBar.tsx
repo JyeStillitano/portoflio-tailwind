@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function NavBar() {
   return (
-    <div className="flex flex-col w-24 h-96 justify-evenly rounded-xl shadow-lg bg-white">
+    <div className="flex flex-col w-24 h-96 mx-4 justify-evenly rounded-xl shadow-lg bg-white">
       {/* Profile Icon */}
       <div className="flex justify-center">
         <img
