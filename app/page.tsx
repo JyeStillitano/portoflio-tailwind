@@ -35,8 +35,8 @@ export default function Home() {
         <div className="flex-col">
           <h1>Who Am I?</h1>
           <p>
-            Hi there, I'm Jye, a Melbourne based programmer with a Bachelors of
-            Computer Science, majoring in Software Development.
+            Hi there, I&apos;m Jye, a Melbourne based programmer with a
+            Bachelors of Computer Science, majoring in Software Development.
           </p>
           <Image src={programming_image} alt="Programming illustration." />
           <p>

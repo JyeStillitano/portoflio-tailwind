@@ -2,8 +2,6 @@ import Image from "next/image";
 
 // Icons credit: https://heroicons.com
 
-var selection: number = 1;
-
 export default function NavBar() {
   return (
     <div className="flex flex-col w-24 h-96 justify-evenly rounded-xl shadow-lg bg-white">
