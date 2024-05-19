@@ -17,7 +17,7 @@ export default function Home() {
     <div className="h-full max-w-5xl m-auto">
       {/* Head */}
       <div className="flex justify-center mb-4">
-        <div className="bg-black rounded-b-xl shadow-xl px-8 py-4 sticky top-0">
+        <div className="bg-black rounded-b-xl shadow-lg px-8 py-4 sticky top-0">
           <h1 className="text-3xl text-white font-thin tracking-wider">
             Jye Stillitano
           </h1>
@@ -27,12 +27,12 @@ export default function Home() {
       {/* Body */}
 
       {/* NavBar Container */}
-      <div className="sticky top-0 lg:fixed lg:top-1/4 lg:m-auto">
+      <div className="sticky top-0 bg-blue-200 p-1 lg:fixed lg:top-1/4 lg:m-auto">
         <NavBar />
       </div>
 
       {/* Content Container */}
-      <div className="bg-white flex-grow rounded-xl shadow-lg mx-36 p-4 mb-20">
+      <div className="bg-white flex-grow rounded-xl shadow-lg mx-4 p-4 mb-4 md:mx-24 lg:mx-36">
         {/* Content */}
         <div className="flex-col px-4">
           <h1 className="text-4xl font-bold text-center my-8">Who Am I?</h1>
@@ -53,27 +53,27 @@ export default function Home() {
           {/* Tech Stack */}
           <div className="flex flex-row justify-evenly my-12">
             <Image
-              className="m-auto sm:size-16 md:size-20 lg:size-24"
+              className="m-auto size-16 md:size-20 lg:size-24"
               src={reactjs_icon}
               alt="React JS"
             />
             <Image
-              className="m-auto sm:size-16 md:size-20 lg:size-24"
+              className="m-auto size-16 md:size-20 lg:size-24"
               src={nextjs_icon}
               alt="Next JS"
             />
             <Image
-              className="m-auto md:size-20 lg:size-24 sm:size-16 "
+              className="m-auto size-16 md:size-20 lg:size-24 sm:size-16 "
               src={nodejs_icon}
               alt="Node JS"
             />
             <Image
-              className="m-auto sm:size-16 md:size-20 lg:size-24"
+              className="m-auto size-16 md:size-20 lg:size-24"
               src={tailwind_icon}
               alt="Tailwind CSS"
             />
             <Image
-              className="m-auto sm:size-16 md:size-20 lg:size-24"
+              className="m-auto size-16 md:size-20 lg:size-24"
               src={figma_icon}
               alt="Figma"
             />
@@ -98,8 +98,7 @@ export default function Home() {
           </p>
           <div className="flex justify-center">
             <a
-              href="https://github.com/JyeStillitano/"
-              target="_blank"
+              href="/projects"
               className="bg-blue-600 rounded-full py-2 px-6 m-4 text-white font-semibold hover:shadow-lg hover:bg-blue-700"
             >
               Check Out My Projects
