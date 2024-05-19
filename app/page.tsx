@@ -27,7 +27,7 @@ export default function Home() {
       {/* Body */}
 
       {/* NavBar Container */}
-      <div className="fixed top-1/4">
+      <div className="sticky top-0 lg:fixed lg:top-1/4 lg:m-auto">
         <NavBar />
       </div>
 
@@ -50,46 +50,40 @@ export default function Home() {
             showcase my personal work. <br />
             It has been built using the following tools and frameworks...
           </p>
+          {/* Tech Stack */}
           <div className="flex flex-row justify-evenly my-12">
             <Image
-              className="m-auto"
+              className="m-auto sm:size-16 md:size-20 lg:size-24"
               src={reactjs_icon}
               alt="React JS"
-              width="100"
-              height="100"
             />
             <Image
-              className="m-auto"
+              className="m-auto sm:size-16 md:size-20 lg:size-24"
               src={nextjs_icon}
               alt="Next JS"
-              width="100"
-              height="100"
             />
             <Image
-              className="m-auto"
+              className="m-auto md:size-20 lg:size-24 sm:size-16 "
               src={nodejs_icon}
               alt="Node JS"
-              width="100"
-              height="100"
             />
             <Image
-              className="m-auto"
+              className="m-auto sm:size-16 md:size-20 lg:size-24"
               src={tailwind_icon}
               alt="Tailwind CSS"
-              width="100"
-              height="100"
             />
             <Image
-              className="m-auto"
+              className="m-auto sm:size-16 md:size-20 lg:size-24"
               src={figma_icon}
               alt="Figma"
-              width="100"
-              height="100"
             />
           </div>
           <p className="text-center">
             The project is completely open source and available on my{" "}
-            <a href="https://github.com/JyeStillitano/jyestillitano.github.io">
+            <a
+              href="https://github.com/JyeStillitano/jyestillitano.github.io"
+              className="text-blue-600 font-bold hover:text-blue-700"
+            >
               GitHub
             </a>
             .
@@ -112,8 +106,8 @@ export default function Home() {
             </a>
           </div>
           {/* Contact Information */}
-          <div className="flex justify-evenly">
-            <div className="m-4">
+          <div className="flex justify-evenly flex-wrap my-4">
+            <div className=" whitespace-nowrap">
               <Image
                 src={github_icon}
                 alt="Github Icon"
@@ -121,7 +115,7 @@ export default function Home() {
               />
               <p className="inline text-nowrap">@JyeStillitano</p>
             </div>
-            <div className="m-4">
+            <div className=" whitespace-nowrap">
               <Image
                 src={linkedin_icon}
                 alt="LinkedIn Icon"
@@ -129,7 +123,7 @@ export default function Home() {
               />
               <p className="inline text-nowrap">@Jye Stillitano</p>
             </div>
-            <div className="m-4">
+            <div className=" whitespace-nowrap">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

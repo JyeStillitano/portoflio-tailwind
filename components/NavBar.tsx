@@ -4,9 +4,12 @@ import Image from "next/image";
 
 export default function NavBar() {
   return (
-    <div className="flex flex-col w-24 h-96 mx-4 justify-evenly rounded-xl shadow-lg bg-white">
+    <div
+      className="rounded-full shadow-lg bg-white flex flew-row justify-between max-w-lg m-auto my-4
+        lg:flex-col"
+    >
       {/* Profile Icon */}
-      <div className="flex justify-center">
+      <div className="flex justify-center m-2">
         <img
           className=" rounded-full w-12 h-12 border-2 border-black"
           src="./Profile.jpg"
@@ -14,7 +17,7 @@ export default function NavBar() {
       </div>
 
       {/* Mail Icon */}
-      <div className="flex justify-center">
+      <div className="flex justify-center m-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -32,7 +35,7 @@ export default function NavBar() {
       </div>
 
       {/* Code Icon */}
-      <div className="flex justify-center">
+      <div className="flex justify-center m-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -50,7 +53,7 @@ export default function NavBar() {
       </div>
 
       {/* Art Icon */}
-      <div className="flex justify-center">
+      <div className="flex justify-center m-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -68,7 +71,7 @@ export default function NavBar() {
       </div>
 
       {/* Music Icon */}
-      <div className="flex justify-center">
+      <div className="flex justify-center m-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
