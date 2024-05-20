@@ -10,19 +10,13 @@ import linkedin_icon from "@/public/linkedin.svg";
 import figma_icon from "@/public/figma.svg";
 
 import NavBar from "@/components/NavBar";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
     // Outer Container
     <div className="h-full max-w-5xl m-auto">
-      {/* Head */}
-      <div className="flex justify-center mb-4">
-        <div className="bg-black rounded-b-xl shadow-lg px-8 py-4 sticky top-0">
-          <h1 className="text-3xl text-white font-thin tracking-wider">
-            Jye Stillitano
-          </h1>
-        </div>
-      </div>
+      <Header />
 
       {/* Body */}
 
