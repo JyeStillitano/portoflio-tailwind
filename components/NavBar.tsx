@@ -7,22 +7,22 @@ export default function NavBar() {
         lg:flex-col"
     >
       {/* Profile Icon */}
-      <a className="flex justify-center m-2">
+      <a className="m-2" href="/">
         <img
-          className=" rounded-full w-12 h-12 border-2 border-black"
+          className=" rounded-full w-12 h-12 border-2 border-black hover:border-blue-600 hover:border-solid hover:stroke-white hover:cursor-pointer transition-all"
           src="./Profile.jpg"
         />
       </a>
 
       {/* Mail Icon */}
-      <a href="/mail" className="flex justify-center m-4">
+      <a href="/mail" className="m-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8"
+          className="w-12 h-12 p-3 rounded-full stroke-gray-200 hover:bg-blue-400 hover:border-black hover:border-solid hover:border-2 transition-all hover:p-2"
         >
           <path
             strokeLinecap="round"
@@ -33,14 +33,14 @@ export default function NavBar() {
       </a>
 
       {/* Code Icon */}
-      <a href="/projects" className="flex justify-center m-4">
+      <a href="/projects" className="m-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8"
+          className="w-12 h-12 p-3 rounded-full hover:bg-blue-600 hover:border-black hover:border-solid hover:stroke-white hover:border-2 transition-all hover:p-2"
         >
           <path
             strokeLinecap="round"
@@ -51,14 +51,14 @@ export default function NavBar() {
       </a>
 
       {/* Art Icon */}
-      <a href="/art" className="flex justify-center m-4">
+      <a href="/art" className="m-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8"
+          className="w-12 h-12 p-3 rounded-full stroke-gray-200 hover:bg-blue-400 hover:border-black hover:border-solid hover:border-2 transition-all hover:p-2"
         >
           <path
             strokeLinecap="round"
@@ -69,14 +69,14 @@ export default function NavBar() {
       </a>
 
       {/* Music Icon */}
-      <a href="/music" className="flex justify-center m-4">
+      <a href="/music" className="m-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8"
+          className="w-12 h-12 p-3 rounded-full stroke-gray-200 hover:bg-blue-400 hover:border-black hover:border-solid hover:border-2 transition-all hover:p-2 duration-200"
         >
           <path
             strokeLinecap="round"
