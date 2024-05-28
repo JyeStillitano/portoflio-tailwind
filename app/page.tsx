@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 import programming_image from "@/public/programming.svg";
 import programming_guy_image from "@/public/programming-guy.svg";
 import reactjs_icon from "@/public/reactjs.svg";
@@ -12,12 +13,18 @@ import figma_icon from "@/public/figma.svg";
 import NavBar from "@/components/NavBar";
 import Header from "@/components/Header";
 
+export const metadata: Metadata = {
+  title: "Full Stack Software Developer, Melbourne  | Jye Stillitano",
+  description:
+    "Melbourne based Software Developer. Computer Science undergraduate, majoring in Software Development.",
+};
+
 // Credit https://storyset.com/ for illustrations.
 
 export default function Home() {
   return (
     // Outer Container
-    <div className="h-full max-w-5xl m-auto">
+    <div className="m-auto h-full max-w-5xl">
       <Header />
 
       {/* Body */}
@@ -28,13 +35,13 @@ export default function Home() {
       </div>
 
       {/* Content Container */}
-      <div className="bg-white flex-grow rounded-xl shadow-lg mx-4 p-4 mb-8 md:mx-24 lg:mx-36">
+      <div className="mx-4 mb-8 flex-grow rounded-xl bg-white p-4 shadow-lg md:mx-24 lg:mx-36">
         {/* Content */}
         <div className="flex-col px-4">
-          <h1 className="text-6xl font-extrabold text-center my-8 text-blue-600 tracking-tight">
+          <h1 className="my-8 text-center text-6xl font-extrabold tracking-tight text-blue-600">
             Who Am I?
           </h1>
-          <p className="text-center my-4 max-w-96 mx-auto leading-7">
+          <p className="mx-auto my-4 max-w-96 text-center leading-7">
             Hi there, I&apos;m Jye, a Melbourne based programmer with a
             Bachelors of Computer Science, majoring in Software Development.
           </p>
@@ -43,13 +50,13 @@ export default function Home() {
             alt="Programming illustration."
             className="mx-auto"
           />
-          <p className="text-center my-4 max-w-96 mx-auto leading-7">
+          <p className="mx-auto my-4 max-w-96 text-center leading-7">
             I have created this website as a hobby project and as a place to
             showcase my personal work. <br />
             It has been built using the following tools and frameworks...
           </p>
           {/* Tech Stack */}
-          <div className="flex flex-row justify-evenly my-12">
+          <div className="my-12 flex flex-row justify-evenly">
             <Image
               className="m-auto size-16 md:size-20 lg:size-24"
               src={reactjs_icon}
@@ -61,7 +68,7 @@ export default function Home() {
               alt="Next JS"
             />
             <Image
-              className="m-auto size-16 md:size-20 lg:size-24 sm:size-16 "
+              className="m-auto size-16 sm:size-16 md:size-20 lg:size-24 "
               src={nodejs_icon}
               alt="Node JS"
             />
@@ -76,11 +83,11 @@ export default function Home() {
               alt="Figma"
             />
           </div>
-          <p className="text-center max-w-96 mx-auto leading-7">
+          <p className="mx-auto max-w-96 text-center leading-7">
             The project is completely open source and available on my{" "}
             <a
               href="https://github.com/JyeStillitano/jyestillitano.github.io"
-              className="text-blue-600 font-bold hover:text-blue-700"
+              className="font-bold text-blue-600 hover:text-blue-700"
             >
               GitHub
             </a>
@@ -91,26 +98,26 @@ export default function Home() {
             alt="Programming guy illustration."
             className="mx-auto"
           />
-          <p className="text-center mb-4 leading-7">
+          <p className="mb-4 text-center leading-7">
             Want to find out more of <b>what I do?</b>
           </p>
           <div className="flex justify-center">
-            <div className="relative left-[236px] top-3 h-3 w-3  bg-blue-600 rounded-full animate-ping opacity-70" />
-            <div className="relative left-[224px] top-3 h-3 w-3 bg-blue-200 rounded-full" />
+            <div className="relative left-[236px] top-3 h-3 w-3  animate-ping rounded-full bg-blue-600 opacity-70" />
+            <div className="relative left-[224px] top-3 h-3 w-3 rounded-full bg-blue-200" />
             <a
               href="/projects"
-              className="bg-blue-600 rounded-full py-2 px-6 m-4 text-white font-semibold hover:shadow-lg hover:bg-blue-700"
+              className="m-4 rounded-full bg-blue-600 px-6 py-2 font-semibold text-white hover:bg-blue-700 hover:shadow-lg"
             >
               Check Out My Projects
             </a>
           </div>
           {/* Contact Information */}
-          <div className="flex justify-evenly flex-wrap my-4">
+          <div className="my-4 flex flex-wrap justify-evenly">
             <div className=" whitespace-nowrap">
               <Image
                 src={github_icon}
                 alt="Github Icon"
-                className="inline mx-4"
+                className="mx-4 inline"
               />
               <p className="inline text-nowrap">@JyeStillitano</p>
             </div>
@@ -118,7 +125,7 @@ export default function Home() {
               <Image
                 src={linkedin_icon}
                 alt="LinkedIn Icon"
-                className="inline mx-4"
+                className="mx-4 inline"
               />
               <p className="inline text-nowrap">@Jye Stillitano</p>
             </div>
@@ -129,7 +136,7 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-8 h-8 inline mx-4"
+                className="mx-4 inline h-8 w-8"
               >
                 <path
                   strokeLinecap="round"

@@ -4,11 +4,6 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Jye Stillitano",
-  description: "A personal webpage.",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -16,7 +11,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-      <body className="bg-gray-100 h-full  m-0 p-0">{children}</body>
+      <body className="m-0 h-full  bg-gray-100 p-0">{children}</body>
     </html>
   );
 }
