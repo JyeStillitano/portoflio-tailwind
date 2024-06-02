@@ -13,6 +13,7 @@ const config: Config = {
       accent: "#4b5563",
       background: "#111827",
       content: colors.white,
+      disabled: "#4b5563",
       black: colors.black,
       white: colors.white,
       gray: colors.gray,

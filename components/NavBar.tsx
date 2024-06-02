@@ -5,26 +5,26 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <div
-      className="flew-row border-accent m-auto my-1 flex max-w-lg justify-between rounded-full border-[2px] shadow-lg
+      className="flew-row m-auto my-1 flex max-w-lg justify-between rounded-full border-[2px] border-accent bg-background shadow-lg
         lg:flex-col"
     >
       {/* Profile Icon */}
       <Link className="m-2" href="/">
         <img
-          className=" border-primary stroke-conent h-12 w-12 rounded-full border-2 transition-all hover:cursor-pointer hover:border-solid hover:border-blue-600"
+          className=" stroke-conent h-12 w-12 rounded-full border-2 border-primary transition-all hover:border-4 hover:border-blue-400"
           src="./Profile.jpg"
         />
       </Link>
 
       {/* Mail Icon */}
-      <Link href="/mail" className="m-2">
+      <Link href="" className="m-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="stroke-content hover:border-content h-12 w-12 rounded-full p-3 transition-all hover:border-2 hover:border-solid hover:p-2"
+          className="stroke-disabled h-12 w-12 rounded-full p-3"
         >
           <path
             strokeLinecap="round"
@@ -42,7 +42,7 @@ export default function NavBar() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="stroke-content hover:border-content h-12 w-12 rounded-full p-3 transition-all hover:border-2 hover:border-solid hover:p-2"
+          className="h-12 w-12 rounded-full stroke-content p-3 transition-all hover:border-2 hover:border-solid hover:border-content hover:p-2"
         >
           <path
             strokeLinecap="round"
@@ -53,14 +53,14 @@ export default function NavBar() {
       </Link>
 
       {/* Art Icon */}
-      <Link href="/art" className="m-2">
+      <Link href="" className="m-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="stroke-content hover:border-content h-12 w-12 rounded-full p-3 transition-all hover:border-2 hover:border-solid hover:p-2"
+          className="stroke-disabled h-12 w-12 rounded-full p-3"
         >
           <path
             strokeLinecap="round"
@@ -71,14 +71,14 @@ export default function NavBar() {
       </Link>
 
       {/* Music Icon */}
-      <Link href="/music" className="m-2">
+      <Link href="" className="m-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="stroke-content hover:border-content h-12 w-12 rounded-full p-3 transition-all hover:border-2 hover:border-solid hover:p-2"
+          className="stroke-disabled h-12 w-12 rounded-full p-3"
         >
           <path
             strokeLinecap="round"
