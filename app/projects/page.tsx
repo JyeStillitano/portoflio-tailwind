@@ -16,7 +16,7 @@ export default function Home() {
       {/* Body */}
 
       {/* NavBar Container */}
-      <div className="sticky top-0 p-1 lg:fixed lg:top-1/4 lg:m-auto">
+      <div className="bg-background sticky top-0 p-1 lg:fixed lg:top-1/4 lg:m-auto">
         <NavBar />
       </div>
 
