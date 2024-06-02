@@ -1,6 +1,11 @@
 import { Metadata } from "next";
 import NavBar from "@/components/NavBar";
 import Header from "@/components/Header";
+import Project from "@/components/Project";
+import projectImage1 from "@/public/projects/jyestillitano.github.io.png";
+import projectImage2 from "@/public/projects/SpaceShooter.png";
+import projectImage3 from "@/public/projects/3DPlatformer.png";
+import projectImage4 from "@/public/projects/Microraptor.png";
 
 export const metadata: Metadata = {
   title: "Personal Projects  | Jye Stillitano",
@@ -16,7 +21,7 @@ export default function Home() {
       {/* Body */}
 
       {/* NavBar Container */}
-      <div className="sticky top-0 p-1 lg:fixed lg:top-1/4 lg:m-auto">
+      <div className="sticky top-0 p-1 px-4 lg:fixed lg:top-1/4 lg:m-auto">
         <NavBar />
       </div>
 
@@ -24,9 +29,16 @@ export default function Home() {
       <div className="mx-4 mb-4 flex-grow rounded-xl border-[2px] border-accent p-4 shadow-lg md:mx-24 lg:mx-36">
         {/* Content */}
         <div className="flex-col px-4">
-          <h1 className="my-8 text-center text-4xl font-bold text-primary">
+          <h1 className="my-8 text-center text-6xl font-extrabold tracking-tight text-primary">
             My Projects
           </h1>
+          {/* Project Gallery */}
+          <div className="my-16 flex flex-wrap justify-center">
+            <Project name="jyestillitano.github.io" image={projectImage1.src} />
+            <Project name="2D Space Shooter" image={projectImage2.src} />
+            <Project name="3D Platformer" image={projectImage3.src} />
+            <Project name="Project Microraptor" image={projectImage4.src} />
+          </div>
           <p className="my-16 text-center text-content">
             This website is a project I have been working on in order to develop
             my skills as a full stack web developer.

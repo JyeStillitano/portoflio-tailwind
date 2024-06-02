@@ -11,7 +11,7 @@ export default function NavBar() {
       {/* Profile Icon */}
       <Link className="m-2" href="/">
         <img
-          className=" stroke-conent h-12 w-12 rounded-full border-2 border-primary transition-all hover:border-4 hover:border-blue-400"
+          className="stroke-conent h-12 w-12 rounded-full border-2 border-primary transition-all hover:border-4 hover:border-blue-400"
           src="./Profile.jpg"
         />
       </Link>
@@ -24,7 +24,7 @@ export default function NavBar() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="stroke-disabled h-12 w-12 rounded-full p-3"
+          className="h-12 w-12 rounded-full stroke-disabled p-3"
         >
           <path
             strokeLinecap="round"
@@ -60,7 +60,7 @@ export default function NavBar() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="stroke-disabled h-12 w-12 rounded-full p-3"
+          className="h-12 w-12 rounded-full stroke-disabled p-3"
         >
           <path
             strokeLinecap="round"
@@ -78,7 +78,7 @@ export default function NavBar() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="stroke-disabled h-12 w-12 rounded-full p-3"
+          className="h-12 w-12 rounded-full stroke-disabled p-3"
         >
           <path
             strokeLinecap="round"
