@@ -6,6 +6,7 @@ import projectImage1 from "@/public/projects/jyestillitano.github.io.png";
 import projectImage2 from "@/public/projects/SpaceShooter.png";
 import projectImage3 from "@/public/projects/3DPlatformer.png";
 import projectImage4 from "@/public/projects/Microraptor.png";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Personal Projects  | Jye Stillitano",
@@ -22,18 +23,18 @@ export default function Home() {
 
       {/* NavBar Container */}
       <div className="sticky top-0 p-1 px-4 lg:fixed lg:top-1/4 lg:m-auto">
-        <NavBar />
+        <NavBar selection={3} />
       </div>
 
       {/* Content Container */}
       <div className="mx-4 mb-4 flex-grow rounded-xl border-[2px] border-accent p-4 shadow-lg md:mx-24 lg:mx-36">
         {/* Content */}
         <div className="flex-col px-4">
-          <h1 className="my-8 text-center text-6xl font-extrabold tracking-tight text-primary">
+          <h1 className="my-8 text-center text-6xl font-bold tracking-tight text-primary">
             My Projects
           </h1>
           {/* Project Gallery */}
-          <div className="my-16 flex flex-wrap justify-center">
+          <div className="my-16 flex flex-row flex-wrap justify-center">
             <Project name="jyestillitano.github.io" image={projectImage1.src} />
             <Project name="2D Space Shooter" image={projectImage2.src} />
             <Project name="3D Platformer" image={projectImage3.src} />
@@ -41,7 +42,16 @@ export default function Home() {
           </div>
           <p className="my-16 text-center text-content">
             This website is a project I have been working on in order to develop
-            my skills as a full stack web developer.
+            my skills as a full stack developer. The front end was designed
+            using Figma. The design is publically available
+            <Link
+              href="https://www.figma.com/design/7CQBA0EwAEx7YvXiFRIskO/Website?node-id=0%3A1&t=2exI8fWz6AsemVWX-1"
+              target="_blank"
+              className="ml-1 font-bold text-primary hover:text-blue-400"
+            >
+              here
+            </Link>
+            .
           </p>
           <p className="my-16 text-center text-content">
             Through this project I have primarily been interested in practicing

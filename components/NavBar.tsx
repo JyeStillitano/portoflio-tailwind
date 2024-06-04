@@ -2,7 +2,11 @@
 
 import Link from "next/link";
 
-export default function NavBar() {
+export interface NavBarProps {
+  selection: number;
+}
+
+export default function NavBar({ selection }: NavBarProps) {
   return (
     <div
       className="flew-row m-auto my-1 flex max-w-lg justify-between rounded-full border-[2px] border-accent bg-background shadow-lg
@@ -11,7 +15,11 @@ export default function NavBar() {
       {/* Profile Icon */}
       <Link className="m-2" href="/">
         <img
-          className="stroke-conent h-12 w-12 rounded-full border-2 border-primary transition-all hover:border-4 hover:border-blue-400"
+          className={
+            selection == 1
+              ? "h-12 w-12 rounded-full border-2 border-primary transition-all hover:border-4 hover:border-blue-400"
+              : "h-12 w-12 rounded-full border-2 border-accent transition-all hover:border-4 hover:border-blue-400"
+          }
           src="./Profile.jpg"
         />
       </Link>
@@ -42,7 +50,11 @@ export default function NavBar() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="h-12 w-12 rounded-full stroke-content p-3 transition-all hover:border-2 hover:border-solid hover:border-content hover:p-2"
+          className={
+            selection == 3
+              ? "h-12 w-12 rounded-full border-2 border-solid border-content stroke-content p-3 transition-all hover:p-2"
+              : "h-12 w-12 rounded-full stroke-content p-3 transition-all hover:border-2 hover:border-solid hover:border-content hover:p-2"
+          }
         >
           <path
             strokeLinecap="round"

@@ -30,7 +30,7 @@ export default function Home() {
 
       {/* NavBar Container */}
       <div className="sticky top-0 p-1 px-4 lg:fixed lg:top-1/4 lg:m-auto">
-        <NavBar />
+        <NavBar selection={1} />
       </div>
 
       {/* Content Container */}
@@ -57,27 +57,27 @@ export default function Home() {
           {/* Tech Stack */}
           <div className="my-12 flex flex-row justify-evenly">
             <Image
-              className="m-auto size-16 md:size-20 lg:size-24"
+              className="m-auto size-12 transition-all sm:size-16 md:size-20 lg:size-24"
               src={reactjs_icon}
               alt="React JS"
             />
             <Image
-              className="m-auto size-16 md:size-20 lg:size-24"
+              className="m-auto size-12 transition-all sm:size-16 md:size-20 lg:size-24"
               src={nextjs_icon}
               alt="Next JS"
             />
             <Image
-              className="m-auto size-16 sm:size-16 md:size-20 lg:size-24 "
+              className="m-auto size-12 transition-all sm:size-16 md:size-20 lg:size-24"
               src={nodejs_icon}
               alt="Node JS"
             />
             <Image
-              className="m-auto size-16 md:size-20 lg:size-24"
+              className="m-auto size-12 transition-all sm:size-16 md:size-20 lg:size-24"
               src={tailwind_icon}
               alt="Tailwind CSS"
             />
             <Image
-              className="m-auto size-16 md:size-20 lg:size-24"
+              className="m-auto size-12 transition-all sm:size-16 md:size-20 lg:size-24"
               src={figma_icon}
               alt="Figma"
             />
