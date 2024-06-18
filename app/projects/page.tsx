@@ -1,12 +1,14 @@
-import { Metadata } from "next";
-import NavBar from "@/components/NavBar";
-import Header from "@/components/Header";
-import Project from "@/components/Project";
 import projectImage1 from "@/public/projects/jyestillitano.github.io.png";
 import projectImage2 from "@/public/projects/SpaceShooter.png";
 import projectImage3 from "@/public/projects/3DPlatformer.png";
 import projectImage4 from "@/public/projects/Microraptor.png";
+
+import NavBar from "@/components/NavBar";
+import Header from "@/components/Header";
+import Project from "@/components/Project";
+import ProjectModal from "@/components/ProjectModal";
 import Link from "next/link";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Personal Projects  | Jye Stillitano",

@@ -10,6 +10,7 @@ import figma_icon from "@/public/figma.svg";
 
 import NavBar from "@/components/NavBar";
 import Header from "@/components/Header";
+import ProjectModal from "@/components/ProjectModal";
 import Link from "next/link";
 
 export const metadata: Metadata = {
