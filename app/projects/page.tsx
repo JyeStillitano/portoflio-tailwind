@@ -6,7 +6,6 @@ import projectImage4 from "@/public/projects/Microraptor.png";
 import NavBar from "@/components/NavBar";
 import Header from "@/components/Header";
 import Project from "@/components/Project";
-import ProjectModal from "@/components/ProjectModal";
 import Link from "next/link";
 import { Metadata } from "next";
 
@@ -14,6 +13,40 @@ export const metadata: Metadata = {
   title: "Personal Projects  | Jye Stillitano",
   description: "My personal project portfolio. Mostly learning hobby projects.",
 };
+
+const projects = [
+  {
+    name: "jyestillitano.github.io",
+    image: projectImage1.src,
+    content:
+      "Designed to be an online portofolio of projects I have worked on, this webpage has been a great tool for practicing my " +
+      "skills using modern web development tool and frameworks. Particularly Next JS with TypeScript. " +
+      'The web app is currently hosted with GitHub pages, using the default "github.io" domain.',
+    github: "https://github.com/JyeStillitano/jyestillitano.github.io",
+  },
+  {
+    name: "2D Space Shooter",
+    image: projectImage2.src,
+    content:
+      "My first project using the open source game development engine, Godot. " +
+      "Through this project I learnt about the Godot engine, it's node based design structure.",
+    github: "https://github.com/JyeStillitano/BulletHell",
+  },
+  {
+    name: "3D Platformer",
+    image: projectImage3.src,
+    content: "Made in Godot",
+    github: "https://github.com/JyeStillitano/Godot-3D-Platformer",
+  },
+  {
+    name: "Project Microraptor",
+    image: projectImage4.src,
+    content:
+      "A local business crowdfunding platform developed as part of my computer science capstone project. " +
+      "Through this project I gained familiarity with React and its reactive and modular approach to web development.",
+    github: "https://github.com/Project-MicroRaptor/microraptor",
+  },
+];
 
 export default function Home() {
   return (
@@ -37,10 +70,14 @@ export default function Home() {
           </h1>
           {/* Project Gallery */}
           <div className="my-16 flex flex-row flex-wrap justify-center">
-            <Project name="jyestillitano.github.io" image={projectImage1.src} />
-            <Project name="2D Space Shooter" image={projectImage2.src} />
-            <Project name="3D Platformer" image={projectImage3.src} />
-            <Project name="Project Microraptor" image={projectImage4.src} />
+            {projects.map((project) => (
+              <Project
+                name={project.name}
+                image={project.image}
+                content={project.content}
+                github={project.github}
+              />
+            ))}
           </div>
           <p className="my-16 text-center text-content">
             This website is a project I have been working on in order to develop
