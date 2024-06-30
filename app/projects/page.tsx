@@ -72,6 +72,7 @@ export default function Home() {
           <div className="my-16 flex flex-row flex-wrap justify-center">
             {projects.map((project) => (
               <Project
+                key={project.name}
                 name={project.name}
                 image={project.image}
                 content={project.content}
