@@ -34,7 +34,7 @@ export default function Home() {
       </div>
 
       {/* Content Container */}
-      <div className="mx-4 mb-8 flex-grow rounded-xl border-[2px] border-accent p-4 shadow-lg md:mx-24 lg:mx-36">
+      <div className="mx-4 mb-8 flex-grow rounded-xl border-[2px] border-accent p-4 shadow-lg sm:mx-12 md:mx-24 lg:mx-36">
         {/* Content */}
         <div className="flex-col px-4">
           <h1 className="my-8 text-center text-6xl font-extrabold tracking-tight text-primary">

@@ -33,7 +33,10 @@ export default function Project({
           onClose={handleToggle}
         />
       ) : null}
-      <div className="group mx-4 py-2" onClick={() => handleToggle()}>
+      <div
+        className="group mx-2 py-1 sm:mx-4 sm:py-2"
+        onClick={() => handleToggle()}
+      >
         <img
           className="max-w-72 rounded-lg border-2 border-accent transition-all group-hover:cursor-pointer group-hover:border-white"
           src={image}

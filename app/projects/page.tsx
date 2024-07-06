@@ -3,6 +3,9 @@ import projectImage2 from "@/public/projects/SpaceShooter.png";
 import projectImage3 from "@/public/projects/3DPlatformer.png";
 import projectImage4 from "@/public/projects/Microraptor.png";
 
+import godotSVG from "@/public/godot.svg";
+import figmaSVG from "@/public/figma.svg";
+
 import NavBar from "@/components/NavBar";
 import Header from "@/components/Header";
 import Project from "@/components/Project";
@@ -62,10 +65,10 @@ export default function Home() {
       </div>
 
       {/* Content Container */}
-      <div className="mx-4 mb-4 flex-grow rounded-xl border-[2px] border-accent p-4 shadow-lg md:mx-24 lg:mx-36">
+      <div className="mx-4 mb-4 flex-grow rounded-xl border-[2px] border-accent p-4 shadow-lg lg:mx-36">
         {/* Content */}
         <div className="flex-col px-4">
-          <h1 className="my-8 text-center text-6xl font-bold tracking-tight text-primary">
+          <h1 className="my-8 text-center text-4xl font-bold tracking-tight text-primary transition-all sm:text-6xl">
             My Projects
           </h1>
           {/* Project Gallery */}
@@ -80,6 +83,9 @@ export default function Home() {
               />
             ))}
           </div>
+          <h2 className="text-center text-xl font-bold tracking-tight text-primary transition-all sm:text-3xl">
+            Web Development
+          </h2>
           <p className="my-16 text-center text-content">
             This website is a project I have been working on in order to develop
             my skills as a full stack developer. The front end was designed
@@ -93,32 +99,60 @@ export default function Home() {
             </Link>
             .
           </p>
-          <p className="my-16 text-center text-content">
-            Through this project I have primarily been interested in practicing
-            UI/UX. By designing the website through the free prototyping tool
-            <a
-              href="https://www.figma.com/"
-              target="_blank"
-              className="mx-1 font-bold text-primary hover:text-blue-400"
-            >
-              Figma
-            </a>
-            and teaching myself
-            <a
-              href="https://tailwindcss.com/"
-              target="_blank"
-              className="mx-1 font-bold text-primary hover:text-blue-400"
-            >
-              Tailwind CSS
-            </a>
-            I can create a fully customised design without relying on component
-            libraries.
-          </p>
+          <div className="flex flex-row">
+            <img
+              src={figmaSVG.src}
+              alt="Figma SVG"
+              className="transiiton-all m-auto size-32 sm:size-52"
+            />
+            <p className="my-16 text-center text-content">
+              Through this project I have primarily been interested in
+              practicing UI/UX. By designing the website through the free
+              prototyping tool
+              <a
+                href="https://www.figma.com/"
+                target="_blank"
+                className="mx-1 font-bold text-primary hover:text-blue-400"
+              >
+                Figma
+              </a>
+              and teaching myself
+              <a
+                href="https://tailwindcss.com/"
+                target="_blank"
+                className="mx-1 font-bold text-primary hover:text-blue-400"
+              >
+                Tailwind CSS
+              </a>
+              I can create a fully customised design without relying on
+              component libraries.
+            </p>
+          </div>
           <p className="my-16 text-center text-content">
             I also intend to work with some public APIs to pull GitHub, Spotify
             and Steam profile data, creating a showcase of some of my interests
             and what I’ve been up to lately.
           </p>
+          <h2 className="text-center text-xl font-bold tracking-tight text-primary transition-all sm:text-3xl">
+            Game Development
+          </h2>
+          <p className="my-16 text-center text-content">
+            In the past year I have begun hobby game development with the open
+            source platform Godot.
+          </p>
+          <div className="flex flex-row">
+            <img
+              src={godotSVG.src}
+              alt="Godot Game Engine SVG"
+              className="m-auto size-32 transition-all sm:size-52"
+            />
+            <p className="my-16 text-center text-content">
+              I started learning game development within the Unity game engine.
+              After hearing about the Godot project and the great work being
+              done by its open source community, I became interested in
+              utilising it for my new projects.
+            </p>
+          </div>
         </div>
       </div>
     </div>
