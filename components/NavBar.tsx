@@ -9,8 +9,8 @@ export interface NavBarProps {
 export default function NavBar({ selection }: NavBarProps) {
   return (
     <div
-      className="flew-row m-auto my-1 flex max-w-lg justify-between rounded-full border-[2px] border-accent bg-background shadow-lg
-        lg:flex-col"
+      className="flew-row m-auto my-1 flex max-w-lg justify-between rounded-full border-[2px] border-accent
+        bg-background shadow-lg lg:flex-col"
     >
       {/* Profile Icon */}
       <Link className="m-2" href="/">

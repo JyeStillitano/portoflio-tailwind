@@ -17,8 +17,8 @@ export default function ProjectModal({
   onClose,
 }: ProjectModalProps) {
   return (
-    <div className="fixed bottom-0 left-0 right-0 top-0 z-40 flex overflow-scroll bg-background bg-opacity-50 px-2 py-36 sm:px-8">
-      <div className="flex-grow overflow-scroll rounded-xl border-[2px] border-accent bg-background px-4 py-4 shadow-lg md:mx-24 lg:mx-36">
+    <div className="fixed bottom-0 left-0 right-0 top-0 z-40 flex justify-center overflow-scroll bg-background bg-opacity-75 p-2 align-middle">
+      <div className="max-w-2xl overflow-scroll rounded-xl border-[2px] border-accent bg-background px-4 py-4 shadow-lg">
         {/* Exit Button */}
         <div className="flex justify-end">
           <svg
@@ -35,16 +35,18 @@ export default function ProjectModal({
           </svg>
         </div>
         {/* Content */}
-        <div className="mx-4 sm:mx-32">
+        <div className="mx-4">
           {/* Project Image */}
           <img src={image} className="mb-8 rounded-xl" />
 
           {/* Project Name */}
-          <h1 className="m-4 my-8 text-4xl font-bold tracking-tight text-content">
+          <h1 className="m-4 my-8 text-2xl font-bold tracking-tight text-content sm:text-4xl">
             {name}
           </h1>
           {/* Project Description */}
-          <p className="m-4 my-8 whitespace-pre-line text-content">{content}</p>
+          <p className="m-4 my-8 whitespace-pre-line text-sm text-content sm:text-base">
+            {content}
+          </p>
           <div className="flex justify-center">
             <Link
               href={github}

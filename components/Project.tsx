@@ -42,7 +42,7 @@ export default function Project({
           src={image}
           alt="Project Image"
         />
-        <p className="bold text-md relative bottom-28 z-0 mx-12 rounded-full bg-primary bg-opacity-50 text-center font-bold text-white hover:bg-opacity-100 group-hover:cursor-pointer">
+        <p className="bold text-md relative bottom-28 mx-12 rounded-full text-center font-bold text-white group-hover:cursor-pointer">
           {name}
         </p>
       </div>
