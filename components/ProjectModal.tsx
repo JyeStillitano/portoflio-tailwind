@@ -44,7 +44,7 @@ export default function ProjectModal({
             {name}
           </h1>
           {/* Project Description */}
-          <p className="m-4 my-8 text-content">{content}</p>
+          <p className="m-4 my-8 whitespace-pre-line text-content">{content}</p>
           <div className="flex justify-center">
             <Link
               href={github}

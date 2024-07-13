@@ -24,21 +24,30 @@ const projects = [
     content:
       "Designed to be an online portofolio of projects I have worked on, this webpage has been a great tool for practicing my " +
       "skills using modern web development tool and frameworks. Particularly Next JS with TypeScript. " +
-      'The web app is currently hosted with GitHub pages, using the default "github.io" domain.',
+      'The web app is currently hosted with GitHub pages, using the default "github.io" domain. \n\n' +
+      "This is my first project using Tailwind CSS over a component library. While I believe this has \n\n" +
+      "lengthened development time significantly, it has been a great tool for creating this fully " +
+      "customised web app.",
     github: "https://github.com/JyeStillitano/jyestillitano.github.io",
   },
   {
     name: "2D Space Shooter",
     image: projectImage2.src,
     content:
-      "My first project using the open source game development engine, Godot. " +
-      "Through this project I learnt about the Godot engine, it's node based design structure.",
+      "My first project using the open source game development engine, Godot. \n\n" +
+      "Through this project I learnt about the Godot engine interface, it's node based " +
+      "design structure and the GDScript language/API.",
     github: "https://github.com/JyeStillitano/BulletHell",
   },
   {
     name: "3D Platformer",
     image: projectImage3.src,
-    content: "Made in Godot",
+    content:
+      "After completing a simple game within the 2D enviornment for Godot I decided to " +
+      "step up to the 3D environment with this platformer project. \n\n" +
+      "Growing up playing a lot of 3D platformers like Mario and Crash Bandicoot, I was very " +
+      "interested in learning the mechanics of what makes platforming satisfying. \n\n" +
+      "Through this project I have learnt a lot about vector math, physics engines and state management.",
     github: "https://github.com/JyeStillitano/Godot-3D-Platformer",
   },
   {
