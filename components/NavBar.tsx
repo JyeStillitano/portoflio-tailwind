@@ -24,15 +24,19 @@ export default function NavBar({ selection }: NavBarProps) {
         />
       </Link>
 
-      {/* Mail Icon */}
-      <Link href="" className="m-2">
+      {/* Contact Icon */}
+      <Link href="contact" className="m-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="h-12 w-12 rounded-full stroke-disabled p-3"
+          className={
+            selection == 2
+              ? "h-12 w-12 rounded-full border-2 border-solid border-content stroke-content p-3 transition-all hover:p-2"
+              : "h-12 w-12 rounded-full stroke-content p-3 transition-all hover:border-2 hover:border-solid hover:border-content hover:p-2"
+          }
         >
           <path
             strokeLinecap="round"

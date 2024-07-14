@@ -77,7 +77,7 @@ export default function Home() {
       <div className="mx-4 mb-4 flex-grow rounded-xl border-[2px] border-accent p-4 shadow-lg lg:mx-36">
         {/* Content */}
         <div className="flex-col px-4">
-          <h1 className="my-8 text-center text-4xl font-bold tracking-tight text-primary transition-all sm:text-6xl">
+          <h1 className="my-8 text-center text-4xl font-extrabold tracking-tight text-primary transition-all sm:text-5xl">
             My Projects
           </h1>
           {/* Project Gallery */}
@@ -114,7 +114,7 @@ export default function Home() {
               alt="Figma SVG"
               className="transiiton-all m-auto size-32 sm:size-52"
             />
-            <p className="my-16 text-center text-content">
+            <p className="my-16 text-content">
               Through this project I have primarily been interested in
               practicing UI/UX. By designing the website through the free
               prototyping tool
@@ -155,7 +155,7 @@ export default function Home() {
               alt="Godot Game Engine SVG"
               className="m-auto size-32 transition-all sm:size-52"
             />
-            <p className="my-16 text-center text-content">
+            <p className="my-16 text-content">
               I started learning game development within the Unity game engine.
               After hearing about the Godot project and the great work being
               done by its open source community, I became interested in

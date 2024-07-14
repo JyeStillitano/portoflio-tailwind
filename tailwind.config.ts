@@ -17,7 +17,8 @@ const config: Config = {
       black: colors.black,
       white: colors.white,
       gray: colors.gray,
-      blue: colors.blue
+      blue: colors.blue,
+      warning: colors.red
     },
     extend: {
       backgroundImage: {
