@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import NavBar from "@/components/NavBar";
 import Header from "@/components/Header";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Contact Me  | Jye Stillitano",
   description: "Fill out some information to get in contact with me.",
 };
-
-// Credit https://storyset.com/ for illustrations.
 
 export default function Home() {
   return (
@@ -28,7 +26,7 @@ export default function Home() {
       <div className="mx-4 mb-8 flex-grow rounded-xl border-[2px] border-accent p-4 shadow-lg sm:mx-12 md:mx-24 lg:mx-36">
         {/* Content */}
         <div className="flex-col px-28">
-          <p className="text-warning-500 my-8 text-center">
+          <p className="my-8 text-center text-warning-500">
             ** Work In Progress: Mail functionality not yet implemented... **
           </p>
           <h1 className="my-8 text-center text-5xl font-extrabold tracking-tight text-primary">
@@ -64,7 +62,7 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <Link
-              href="/projects"
+              href="/contact"
               className="m-4 rounded-full bg-primary px-6 py-2 font-semibold text-content hover:bg-blue-400 hover:shadow-lg"
             >
               Send
