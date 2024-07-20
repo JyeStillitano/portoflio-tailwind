@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import NavBar from "@/components/NavBar";
 import Header from "@/components/Header";
+import MailForm from "@/components/MailForm";
 
 export const metadata: Metadata = {
   title: "Contact Me  | Jye Stillitano",
@@ -32,42 +33,8 @@ export default function Home() {
           <h1 className="my-8 text-center text-5xl font-extrabold tracking-tight text-primary">
             Contact Me
           </h1>
-          <div className="my-8">
-            <label className="ml-2 text-content">Name: *</label>
-            <input
-              type="text"
-              className="mt-2 w-full rounded-xl border-2 border-accent bg-background p-2 text-content"
-            />
-          </div>
-          <div className="my-8">
-            <label className="mb-2 ml-2 text-content">Email: *</label>
-            <input
-              type="text"
-              className="mt-2 w-full rounded-xl border-2 border-accent bg-background p-2 text-content"
-            />
-          </div>
-          <div className="my-8">
-            <label className="mb-2 ml-2 text-content">Subject: *</label>
-            <input
-              type="text"
-              className="mt-2 w-full rounded-xl border-2 border-accent bg-background p-2 text-content"
-            />
-          </div>
-          <div className="my-8">
-            <label className="mb-2 ml-2 text-content">Message: *</label>
-            <input
-              type="text"
-              className="mt-2 h-48 w-full text-wrap rounded-xl border-2 border-accent bg-background p-2 text-content"
-            />
-          </div>
-          <div className="flex justify-center">
-            <Link
-              href="/contact"
-              className="m-4 rounded-full bg-primary px-6 py-2 font-semibold text-content hover:bg-blue-400 hover:shadow-lg"
-            >
-              Send
-            </Link>
-          </div>
+
+          <MailForm />
         </div>
       </div>
     </div>

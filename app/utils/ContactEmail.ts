@@ -8,12 +8,15 @@ const transporter = nodemailer.createTransport({
     user: process.env.SMTP_USER, // generated ethereal user
     pass: process.env.SMTP_PASS, // generated ethereal password
   },
+  tls: {
+    ciphers: "SSLv3",
+  },
 });
 
-const sendEmail = async (subject: string, html: string) => {
+export async function sendEmail(subject: string, html: string) {
   const mailOptions = {
-    from: "jyestillitano@hotmail.com",
-    to: "jyestillitano@hotmail.com",
+    from: process.env.SMTP_USER,
+    to: process.env.SMTP_USER,
     subject,
     html,
   };
