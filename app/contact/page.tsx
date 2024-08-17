@@ -27,9 +27,6 @@ export default function Home() {
       <div className="mx-4 mb-8 flex-grow rounded-xl border-[2px] border-accent p-4 shadow-lg sm:mx-12 md:mx-24 lg:mx-36">
         {/* Content */}
         <div className="flex-col px-28">
-          <p className="my-8 text-center text-warning-500">
-            ** Work In Progress: Mail functionality not yet implemented... **
-          </p>
           <h1 className="my-8 text-center text-5xl font-extrabold tracking-tight text-primary">
             Contact Me
           </h1>
