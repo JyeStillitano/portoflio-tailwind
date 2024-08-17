@@ -75,6 +75,11 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PASS }}
+          SMTP_USER: ${{ secrets.SMTP_PORT }}
+          SMTP_PASS: ${{ secrets.SMTP_USER }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
