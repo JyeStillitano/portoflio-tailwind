@@ -3,26 +3,30 @@
 import { FormEvent } from "react";
 
 export default function MailForm() {
+  // Handles the submission of the contact form and appropriate API call.
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    // Prevent default behaviour (navigation).
     event.preventDefault();
+
+    // Collect the form data from the form submit event.
     const formData = new FormData(event.currentTarget);
 
+    // Call email API, attempt to POST message.
     try {
       const response = await fetch("/api/email", {
         method: "post",
         body: formData,
       });
 
-      if (!response.ok) {
-        console.log("falling over");
-        throw new Error(`response status: ${response.status}`);
-      }
+      // If failed, throw error with response status.
+      if (!response.ok) throw new Error(`Response Status: ${response.status}`);
 
       // Handle response, popup toast message.
-      alert("Message successfully sent");
-    } catch (err) {
+      alert("Message successfully delivered.");
+    } catch (error) {
       // Handle response, popup toast message.
-      alert("Error, please try resubmitting the form");
+      alert("Message failed to be delivered. Please try again.");
+      console.log(error);
     }
   }
 
