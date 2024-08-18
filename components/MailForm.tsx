@@ -19,7 +19,10 @@ export default function MailForm() {
       });
 
       // If failed, throw error with response status.
-      if (!response.ok) throw new Error(`Response Status: ${response.status}`);
+      if (!response.ok)
+        throw new Error(
+          `Response Status: ${response.status} - ${response.json}`,
+        );
 
       // Handle response, popup toast message.
       alert("Message successfully delivered.");
