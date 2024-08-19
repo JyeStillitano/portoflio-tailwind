@@ -102,7 +102,7 @@ export default function Home() {
             <Link
               href="https://www.figma.com/design/7CQBA0EwAEx7YvXiFRIskO/Website?node-id=0%3A1&t=2exI8fWz6AsemVWX-1"
               target="_blank"
-              className="ml-1 font-bold text-primary hover:text-blue-400"
+              className="ml-1 font-bold text-primary hover:text-white"
             >
               here
             </Link>
@@ -121,7 +121,7 @@ export default function Home() {
               <a
                 href="https://www.figma.com/"
                 target="_blank"
-                className="mx-1 font-bold text-primary hover:text-blue-400"
+                className="mx-1 font-bold text-primary hover:text-white"
               >
                 Figma
               </a>
@@ -129,7 +129,7 @@ export default function Home() {
               <a
                 href="https://tailwindcss.com/"
                 target="_blank"
-                className="mx-1 font-bold text-primary hover:text-blue-400"
+                className="mx-1 font-bold text-primary hover:text-white"
               >
                 Tailwind CSS
               </a>

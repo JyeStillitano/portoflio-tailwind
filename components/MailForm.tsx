@@ -82,7 +82,7 @@ export default function MailForm() {
         <input
           type="submit"
           value="Send"
-          className="m-4 rounded-full bg-primary px-6 py-2 font-semibold text-content hover:bg-blue-400 hover:shadow-lg"
+          className="m-4 rounded-full bg-primary px-6 py-2 font-semibold text-content hover:cursor-pointer hover:bg-black hover:shadow-lg"
         />
       </div>
     </form>

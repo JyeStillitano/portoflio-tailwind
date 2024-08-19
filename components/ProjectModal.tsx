@@ -50,7 +50,7 @@ export default function ProjectModal({
           <div className="flex justify-center">
             <Link
               href={github}
-              className="rounded-full bg-primary p-2 hover:cursor-pointer hover:bg-blue-400 hover:shadow-lg"
+              className="rounded-full bg-primary p-2 hover:cursor-pointer hover:bg-white hover:shadow-lg"
               target="_blank"
             >
               <svg
