@@ -5,6 +5,8 @@ import { FormEvent } from "react";
 export default function MailForm() {
   // Handles the submission of the contact form and appropriate API call.
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    return;
+    
     // Prevent default behaviour (navigation).
     event.preventDefault();
 
@@ -81,7 +83,7 @@ export default function MailForm() {
       <div className="flex justify-center">
         <input
           type="submit"
-          value="Send"
+          value="Temporarily Disabled"
           className="m-4 rounded-full bg-primary px-6 py-2 font-semibold text-content hover:cursor-pointer hover:bg-black hover:shadow-lg"
         />
       </div>
