@@ -1,3 +1,4 @@
+import { error } from 'console';
 import { NextResponse, NextRequest } from 'next/server'
 const nodemailer = require('nodemailer');
 
@@ -24,6 +25,12 @@ export async function POST(request: NextRequest) {
   const email = formData.get('email')
   const subject = formData.get('subject')
   const message = formData.get('message')
+  const password = formData.get('password')
+
+  // Check honeypot field.
+  if(password != "") {
+    throw error;
+  }
 
   // Try deliver email.
   try {

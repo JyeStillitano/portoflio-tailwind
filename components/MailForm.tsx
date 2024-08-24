@@ -78,6 +78,19 @@ export default function MailForm() {
           className="mt-2 h-48 w-full text-wrap rounded-xl border-2 border-accent bg-background p-2 text-content"
         />
       </div>
+      <div className="z-[-1] my-8 hidden">
+        <label className="mb-2 ml-2 text-content" htmlFor="form-password">
+          Password: *
+        </label>
+        <input
+          type="text"
+          id="form-password"
+          name="password"
+          tabIndex={-1}
+          autoComplete="off"
+          className="mt-2 w-full rounded-xl border-2 border-accent bg-background p-2 text-content"
+        />
+      </div>
       <div className="flex justify-center">
         <input
           type="submit"
