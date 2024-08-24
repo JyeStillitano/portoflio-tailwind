@@ -5,7 +5,7 @@ import { ToastContainer, Zoom, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function MailForm() {
-  const [sending, setIsSending] = useState(false);
+  const [sending, setIsSending] = useState(true);
 
   // Handles the submission of the contact form and appropriate API call.
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -116,7 +116,7 @@ export default function MailForm() {
       <div className="flex justify-center">
         <input
           type="submit"
-          value="Send"
+          value="Temporarily Disabled"
           disabled={sending}
           className="m-4 rounded-full bg-primary px-6 py-2 font-semibold text-content hover:cursor-pointer hover:bg-black hover:shadow-lg disabled:cursor-not-allowed disabled:bg-disabled disabled:text-black"
         />
