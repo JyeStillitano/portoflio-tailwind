@@ -1,15 +1,25 @@
 "use client";
 
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
+import { ToastContainer, Zoom, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function MailForm() {
+  const [sending, setIsSending] = useState(false);
+
   // Handles the submission of the contact form and appropriate API call.
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     // Prevent default behaviour (navigation).
     event.preventDefault();
+    setIsSending(true);
 
     // Collect the form data from the form submit event.
-    const formData = new FormData(event.currentTarget);
+    const formData: FormData = new FormData(event.currentTarget);
+
+    // Sending mail toast notification.
+    const statusToast = toast.loading("Sending...", {
+      transition: Zoom,
+    });
 
     // Call email API, attempt to POST message.
     try {
@@ -24,13 +34,25 @@ export default function MailForm() {
           `Response Status: ${response.status} - ${response.json}`,
         );
 
-      // Handle response, popup toast message.
-      alert("Message successfully delivered.");
+      toast.update(statusToast, {
+        render: "Message successfully delivered.",
+        type: "success",
+        autoClose: 4000,
+        isLoading: false,
+        transition: Zoom,
+      });
     } catch (error) {
-      // Handle response, popup toast message.
-      alert("Message failed to be delivered. Please try again.");
+      // Toast Notification - Failed
+      toast.update(statusToast, {
+        render: "Whoops! Message failed to deliver. Please try again.",
+        type: "error",
+        autoClose: 4000,
+        isLoading: false,
+        transition: Zoom,
+      });
       console.log(error);
     }
+    setIsSending(false);
   }
 
   return (
@@ -95,9 +117,21 @@ export default function MailForm() {
         <input
           type="submit"
           value="Send"
-          className="m-4 rounded-full bg-primary px-6 py-2 font-semibold text-content hover:cursor-pointer hover:bg-black hover:shadow-lg"
+          disabled={sending}
+          className="m-4 rounded-full bg-primary px-6 py-2 font-semibold text-content hover:cursor-pointer hover:bg-black hover:shadow-lg disabled:cursor-not-allowed disabled:bg-disabled disabled:text-black"
         />
       </div>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </form>
   );
 }
