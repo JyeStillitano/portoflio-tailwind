@@ -17,8 +17,8 @@ export default function NavBar({ selection }: NavBarProps) {
         <img
           className={
             selection == 1
-              ? "h-12 w-12 rounded-full border-2 border-primary transition-all hover:border-4 hover:border-content"
-              : "h-12 w-12 rounded-full border-2 border-accent transition-all hover:border-4 hover:border-content"
+              ? "h-12 w-12 rounded-full border-2 border-white transition-all hover:border-content"
+              : "h-12 w-12 rounded-full border-2 border-accent transition-all hover:border-content"
           }
           src="./Profile.jpg"
         />
