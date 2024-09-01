@@ -88,7 +88,7 @@ export default function MailForm() {
           type="text"
           id="form-name"
           name="name"
-          className="mt-2 w-full rounded-xl border-2 border-accent bg-background p-2 text-content"
+          className="mt-2 w-full rounded-full border-2 border-accent bg-background px-6 py-2 text-content"
         />
       </div>
       <div className="my-8">
@@ -99,7 +99,7 @@ export default function MailForm() {
           type="text"
           id="form-email"
           name="email"
-          className="mt-2 w-full rounded-xl border-2 border-accent bg-background p-2 text-content"
+          className="mt-2 w-full rounded-full border-2 border-accent bg-background px-6 py-2 text-content"
         />
       </div>
       <div className="my-8">
@@ -110,7 +110,7 @@ export default function MailForm() {
           type="text"
           id="form-subject"
           name="subject"
-          className="mt-2 w-full rounded-xl border-2 border-accent bg-background p-2 text-content"
+          className="mt-2 w-full rounded-full border-2 border-accent bg-background px-6 py-2 text-content"
         />
       </div>
       <div className="my-8">
@@ -120,7 +120,7 @@ export default function MailForm() {
         <textarea
           id="form-message"
           name="message"
-          className="mt-2 h-48 w-full text-wrap rounded-xl border-2 border-accent bg-background p-2 text-content"
+          className="mt-2 h-48 w-full text-wrap rounded-xl border-2 border-accent bg-background px-4 py-2 text-content"
         />
       </div>
       <div className="absolute left-[-1000px] z-[-1] ">
