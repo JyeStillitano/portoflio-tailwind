@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     colors: {
       primary: "#485b82",//"#4D85FF",
-      accent: "#4b5563",
+      accent: "#1D2639",
       background: "#111827",
       title: "#384F7E",
       content: "#dddddd",
