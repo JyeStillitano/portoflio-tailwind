@@ -10,10 +10,10 @@ const config: Config = {
   theme: {
     colors: {
       primary: "#485b82",//"#4D85FF",
-      accent: "#1D2639",
-      background: "#111827",
-      title: "#384F7E",
-      content: "#dddddd",
+      accent: "#E7E7E7",//"#1D2639",
+      background: "#F6F6F6",//"#111827",
+      title: "#FFFFFF",
+      content: "#000000",//"#DDDDDD",
       disabled: "#4b5563",
       black: colors.black,
       white: colors.white,
