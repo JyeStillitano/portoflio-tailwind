@@ -2,6 +2,7 @@ import projectImage1 from "@/public/projects/jyestillitano.github.io.png";
 import projectImage2 from "@/public/projects/SpaceShooter.png";
 import projectImage3 from "@/public/projects/3DPlatformer.png";
 import projectImage4 from "@/public/projects/Microraptor.png";
+import projectImage5 from "@/public/projects/Three.png";
 
 import godotSVG from "@/public/godot.svg";
 import figmaSVG from "@/public/figma.svg";
@@ -19,7 +20,15 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    name: "jyestillitano.github.io",
+    name: "Three Interface",
+    image: projectImage5.src,
+    content:
+      "A project utilising three.js, an interactive three dimensional scene.",
+    github: "https://three.jyes.dev",
+    link: "https://three.jyes.dev",
+  },
+  {
+    name: "jyes.dev",
     image: projectImage1.src,
     content:
       "Designed to be an online portofolio of projects I have worked on, this webpage has been a great tool for practicing my " +
@@ -29,6 +38,7 @@ const projects = [
       "lengthened development time significantly, it has been a great tool for creating this fully " +
       "customised web app.",
     github: "https://github.com/JyeStillitano/jyestillitano.github.io",
+    link: "https://jyes.dev",
   },
   {
     name: "2D Space Shooter",
