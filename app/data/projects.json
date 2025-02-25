@@ -29,6 +29,7 @@
     "name": "platformer",
     "image": "/projects/platformer.png",
     "content": "After completing a simple game within the 2D enviornment for Godot I decided to step up to the 3D environment with this platformer project. \n\nGrowing up playing a lot of 3D platformers like Mario and Crash Bandicoot, I was very interested in learning the mechanics of what makes platforming satisfying. \n\nThrough this project I have learnt a lot about vector math, physics engines and state management.",
-    "github": "https://github.com/JyeStillitano/platformer"
+    "github": "https://github.com/JyeStillitano/platformer",
+    "link": "https://gallery.jyes.dev"
   }
 ]
