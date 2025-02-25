@@ -8,6 +8,7 @@ export interface ProjectProps {
   image: string;
   content: string;
   github: string;
+  link?: string;
 }
 
 export default function Project({
@@ -15,6 +16,7 @@ export default function Project({
   image,
   content,
   github,
+  link,
 }: ProjectProps) {
   const [modalOpen, toggleModal] = useState(false);
 
@@ -30,6 +32,7 @@ export default function Project({
           image={image}
           content={content}
           github={github}
+          link={link && link}
           onClose={handleToggle}
         />
       ) : null}

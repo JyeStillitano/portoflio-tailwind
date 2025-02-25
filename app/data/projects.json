@@ -1,0 +1,34 @@
+[
+  {
+    "name": "three-model-gallery",
+    "image": "/projects/three.png",
+    "content": "A project utilising three.js, an interactive three dimensional scene.",
+    "github": "https://github.com/JyeStillitano/three-model-gallery",
+    "link": "https://three.jyes.dev"
+  },
+  {
+    "name": "portfolio",
+    "image": "/projects/portfolio.png",
+    "content": "Designed to be an online portofolio of projects I have worked on, this webpage has been a great tool for practicing my skills using modern web development tool and frameworks. Particularly Next JS with TypeScript. The web app is currently hosted with GitHub pages, using the default \"github.io\" domain. \n\nThis is my first project using Tailwind CSS over a component library. While I believe this has \n\nlengthened development time significantly, it has been a great tool for creating this fully customised web app.",
+    "github": "https://github.com/JyeStillitano/portoflio"
+  },
+  {
+    "name": "microraptor",
+    "image": "/projects/microraptor.png",
+    "content": "A local business crowdfunding platform developed as part of my computer science capstone project. Through this project I gained familiarity with React and its reactive and modular approach to web development.",
+    "github": "https://github.com/Project-MicroRaptor/microraptor"
+  },
+  {
+    "name": "bullet-hell",
+    "image": "/projects/bullet-hell.png",
+    "content": "My first project using the open source game development engine, Godot. \n\nThrough this project I learnt about the Godot engine interface, it's node based design structure and the GDScript language/API.",
+    "github": "https://github.com/JyeStillitano/bullet-hell",
+    "link": "https://bullet-hell.jyes.dev"
+  },
+  {
+    "name": "platformer",
+    "image": "/projects/platformer.png",
+    "content": "After completing a simple game within the 2D enviornment for Godot I decided to step up to the 3D environment with this platformer project. \n\nGrowing up playing a lot of 3D platformers like Mario and Crash Bandicoot, I was very interested in learning the mechanics of what makes platforming satisfying. \n\nThrough this project I have learnt a lot about vector math, physics engines and state management.",
+    "github": "https://github.com/JyeStillitano/platformer"
+  }
+]

@@ -6,6 +6,7 @@ export interface ProjectModalProps {
   content: string;
   image: string;
   github: string;
+  link?: string;
   onClose: () => void;
 }
 
@@ -14,6 +15,7 @@ export default function ProjectModal({
   image,
   content,
   github,
+  link,
   onClose,
 }: ProjectModalProps) {
   return (
@@ -50,7 +52,7 @@ export default function ProjectModal({
           <div className="flex justify-center">
             <Link
               href={github}
-              className="rounded-full bg-primary p-2 hover:cursor-pointer hover:bg-white hover:shadow-lg"
+              className="mx-2 rounded-full bg-primary p-2 hover:cursor-pointer hover:bg-white hover:shadow-lg"
               target="_blank"
             >
               <svg
@@ -67,6 +69,25 @@ export default function ProjectModal({
                 View on GitHub!
               </p>
             </Link>
+            {link && (
+              <Link
+                href={link}
+                className="mx-2 rounded-full bg-primary p-2 hover:cursor-pointer hover:bg-white hover:shadow-lg"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  className="mx-2 inline"
+                >
+                  <path d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z" />
+                </svg>
+                <p className="mx-2 inline font-semibold text-black">Open!</p>
+              </Link>
+            )}
           </div>
         </div>
       </div>

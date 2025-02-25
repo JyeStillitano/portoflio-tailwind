@@ -1,9 +1,3 @@
-import projectImage1 from "@/public/projects/jyestillitano.github.io.png";
-import projectImage2 from "@/public/projects/SpaceShooter.png";
-import projectImage3 from "@/public/projects/3DPlatformer.png";
-import projectImage4 from "@/public/projects/Microraptor.png";
-import projectImage5 from "@/public/projects/Three.png";
-
 import godotSVG from "@/public/godot.svg";
 import figmaSVG from "@/public/figma.svg";
 
@@ -18,57 +12,7 @@ export const metadata: Metadata = {
   description: "My personal project portfolio. Mostly learning hobby projects.",
 };
 
-const projects = [
-  {
-    name: "Three Interface",
-    image: projectImage5.src,
-    content:
-      "A project utilising three.js, an interactive three dimensional scene.",
-    github: "https://three.jyes.dev",
-    link: "https://three.jyes.dev",
-  },
-  {
-    name: "jyes.dev",
-    image: projectImage1.src,
-    content:
-      "Designed to be an online portofolio of projects I have worked on, this webpage has been a great tool for practicing my " +
-      "skills using modern web development tool and frameworks. Particularly Next JS with TypeScript. " +
-      'The web app is currently hosted with GitHub pages, using the default "github.io" domain. \n\n' +
-      "This is my first project using Tailwind CSS over a component library. While I believe this has \n\n" +
-      "lengthened development time significantly, it has been a great tool for creating this fully " +
-      "customised web app.",
-    github: "https://github.com/JyeStillitano/jyestillitano.github.io",
-    link: "https://jyes.dev",
-  },
-  {
-    name: "2D Space Shooter",
-    image: projectImage2.src,
-    content:
-      "My first project using the open source game development engine, Godot. \n\n" +
-      "Through this project I learnt about the Godot engine interface, it's node based " +
-      "design structure and the GDScript language/API.",
-    github: "https://github.com/JyeStillitano/BulletHell",
-  },
-  {
-    name: "3D Platformer",
-    image: projectImage3.src,
-    content:
-      "After completing a simple game within the 2D enviornment for Godot I decided to " +
-      "step up to the 3D environment with this platformer project. \n\n" +
-      "Growing up playing a lot of 3D platformers like Mario and Crash Bandicoot, I was very " +
-      "interested in learning the mechanics of what makes platforming satisfying. \n\n" +
-      "Through this project I have learnt a lot about vector math, physics engines and state management.",
-    github: "https://github.com/JyeStillitano/Godot-3D-Platformer",
-  },
-  {
-    name: "Project Microraptor",
-    image: projectImage4.src,
-    content:
-      "A local business crowdfunding platform developed as part of my computer science capstone project. " +
-      "Through this project I gained familiarity with React and its reactive and modular approach to web development.",
-    github: "https://github.com/Project-MicroRaptor/microraptor",
-  },
-];
+import projects from "../data/projects.json";
 
 export default function Home() {
   return (
@@ -99,6 +43,7 @@ export default function Home() {
                 image={project.image}
                 content={project.content}
                 github={project.github}
+                link={project.link && project.link}
               />
             ))}
           </div>
@@ -122,7 +67,7 @@ export default function Home() {
             <img
               src={figmaSVG.src}
               alt="Figma SVG"
-              className="transiiton-all m-auto size-32 sm:size-52"
+              className="m-auto size-32 transition-all sm:size-52"
             />
             <p className="my-16 text-content">
               Through this project I have primarily been interested in
