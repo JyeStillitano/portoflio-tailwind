@@ -38,11 +38,11 @@ export default function Home() {
         {/* Content */}
         <div className="flex-col px-4">
           <h1 className="my-8 text-center text-5xl font-extrabold tracking-tight text-primary">
-            Who Am I?
+            Full Stack Dev.
           </h1>
           <p className="mx-auto my-4 max-w-96 text-center leading-7 text-content">
-            Hi there, I&apos;m Jye, a Melbourne based programmer with a
-            Bachelors of Computer Science, majoring in Software Development.
+            I&apos;m Jye, a Melbourne based programmer with a Bachelors of
+            Computer Science, majoring in Software Development.
           </p>
           <Image
             src={programming_image}
@@ -51,7 +51,8 @@ export default function Home() {
           />
           <p className="mx-auto my-4 max-w-96 text-center leading-7 text-content">
             I have created this website as a hobby project and as a place to
-            showcase my personal work. <br />
+            showcase my portoflio of personal work. <br />
+            <br />
             It has been built using the following tools and frameworks...
           </p>
           {/* Tech Stack */}

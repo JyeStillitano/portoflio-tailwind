@@ -1,4 +1,3 @@
-import projectImage4 from "@/public/projects/Microraptor.png";
 import Link from "next/link";
 
 export interface ProjectModalProps {
@@ -46,7 +45,7 @@ export default function ProjectModal({
             {name}
           </h1>
           {/* Project Description */}
-          <p className="m-4 my-8 whitespace-pre-line text-sm text-content sm:text-base">
+          <p className="m-4 my-8 whitespace-pre-wrap text-sm text-content sm:text-base">
             {content}
           </p>
           <div className="flex justify-center">

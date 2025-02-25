@@ -9,7 +9,7 @@
   {
     "name": "portfolio",
     "image": "/projects/portfolio.png",
-    "content": "Designed to be an online portofolio of projects I have worked on, this webpage has been a great tool for practicing my skills using modern web development tool and frameworks. Particularly Next JS with TypeScript. The web app is currently hosted with GitHub pages, using the default \"github.io\" domain. \n\nThis is my first project using Tailwind CSS over a component library. While I believe this has \n\nlengthened development time significantly, it has been a great tool for creating this fully customised web app.",
+    "content": "Designed to be an online portofolio of projects I have worked on, this webpage has been a great tool for practicing my skills using modern web development tool and frameworks. Particularly Next JS with TypeScript. The web app is currently hosted with GitHub pages, using the default \"github.io\" domain. \n\nThis is my first project using Tailwind CSS over a component library. While I believe this has lengthened development time significantly, it has been a great tool for creating this fully customised web app.",
     "github": "https://github.com/JyeStillitano/portoflio"
   },
   {
@@ -21,7 +21,7 @@
   {
     "name": "bullet-hell",
     "image": "/projects/bullet-hell.png",
-    "content": "My first project using the open source game development engine, Godot. \n\nThrough this project I learnt about the Godot engine interface, it's node based design structure and the GDScript language/API.",
+    "content": "My first project using the open source game development engine, Godot. \n\nThrough this project I learnt about the Godot engine interface, it's node based design structure and the GDScript language/API.\n\nUp: \t\t\t\tW\nLeft: \t\t\tA\nDown: \t\tS\nRight: \t\t\tD\nBoost: \t\t\tShift\nShoot: \t\tLeft Click\nBomb: \t\tRight Click",
     "github": "https://github.com/JyeStillitano/bullet-hell",
     "link": "https://bullet-hell.jyes.dev"
   },
