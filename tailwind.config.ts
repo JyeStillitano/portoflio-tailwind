@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 const config: Config = {
   content: [
@@ -9,9 +9,9 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      primary: "#485b82",//"#4D85FF",
-      accent: "#1D2639",
-      background: "#111827",
+      primary: "#242423", //"#4D85FF",
+      accent: "#242423",
+      background: "#e8e8e8",
       title: "#384F7E",
       content: "#dddddd",
       disabled: "#4b5563",
@@ -19,7 +19,7 @@ const config: Config = {
       white: colors.white,
       gray: colors.gray,
       blue: colors.blue,
-      warning: colors.red
+      warning: colors.red,
     },
     extend: {
       backgroundImage: {
@@ -32,8 +32,8 @@ const config: Config = {
   plugins: [],
   variants: {
     extend: {
-        display: ["group-hover"],
+      display: ["group-hover"],
     },
-},
+  },
 };
 export default config;

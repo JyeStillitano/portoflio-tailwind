@@ -81,50 +81,50 @@ export default function MailForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="my-8">
-        <label className="ml-2 text-content" htmlFor="form-name">
+        <label className="ml-2 text-primary" htmlFor="form-name">
           Name: *
         </label>
         <input
           type="text"
           id="form-name"
           name="name"
-          className="mt-2 w-full rounded-full border-2 border-accent bg-background px-6 py-2 text-content"
+          className="mt-2 w-full rounded-full border-2 border-accent bg-background px-6 py-2 text-primary"
         />
       </div>
       <div className="my-8">
-        <label className="mb-2 ml-2 text-content" htmlFor="form-email">
+        <label className="mb-2 ml-2 text-primary" htmlFor="form-email">
           Email: *
         </label>
         <input
           type="text"
           id="form-email"
           name="email"
-          className="mt-2 w-full rounded-full border-2 border-accent bg-background px-6 py-2 text-content"
+          className="mt-2 w-full rounded-full border-2 border-accent bg-background px-6 py-2 text-primary"
         />
       </div>
       <div className="my-8">
-        <label className="mb-2 ml-2 text-content" htmlFor="form-subject">
+        <label className="mb-2 ml-2 text-primary" htmlFor="form-subject">
           Subject: *
         </label>
         <input
           type="text"
           id="form-subject"
           name="subject"
-          className="mt-2 w-full rounded-full border-2 border-accent bg-background px-6 py-2 text-content"
+          className="mt-2 w-full rounded-full border-2 border-accent bg-background px-6 py-2 text-primary"
         />
       </div>
       <div className="my-8">
-        <label className="mb-2 ml-2 text-content" htmlFor="form-message">
+        <label className="mb-2 ml-2 text-primary" htmlFor="form-message">
           Message: *
         </label>
         <textarea
           id="form-message"
           name="message"
-          className="mt-2 h-48 w-full text-wrap rounded-xl border-2 border-accent bg-background px-4 py-2 text-content"
+          className="mt-2 h-48 w-full text-wrap rounded-xl border-2 border-accent bg-background px-4 py-2 text-primary"
         />
       </div>
       <div className="absolute left-[-1000px] z-[-1] ">
-        <label className="mb-2 ml-2 text-content" htmlFor="form-url">
+        <label className="mb-2 ml-2 text-primary" htmlFor="form-url">
           URL: *
         </label>
         <input
