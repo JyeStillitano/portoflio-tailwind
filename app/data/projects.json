@@ -1,8 +1,14 @@
 [
   {
+    "name": "p5-kinematics",
+    "image": "/projects/p5-kinematics.png",
+    "content": "This project is a study of distance constraints, kinematics and procedural animation.",
+    "link": "https://p5-kinematics.netlify.app/"
+  },
+  {
     "name": "three-model-gallery",
     "image": "/projects/three.png",
-    "content": "A project utilising three.js, an interactive three dimensional scene.",
+    "content": "This project utilises three.js, providing an immersive 3D scene.",
     "github": "https://github.com/JyeStillitano/three-model-gallery",
     "link": "https://three.jyes.dev"
   },

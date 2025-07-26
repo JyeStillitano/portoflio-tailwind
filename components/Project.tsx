@@ -7,7 +7,7 @@ export interface ProjectProps {
   name: string;
   image: string;
   content: string;
-  github: string;
+  github?: string;
   link?: string;
 }
 
@@ -31,7 +31,7 @@ export default function Project({
           name={name}
           image={image}
           content={content}
-          github={github}
+          github={github ? github : null}
           link={link && link}
           onClose={handleToggle}
         />
@@ -41,7 +41,7 @@ export default function Project({
         onClick={() => handleToggle()}
       >
         <img
-          className="max-w-72 rounded-lg border-2 border-accent transition-all group-hover:cursor-pointer group-hover:border-white"
+          className="aspect-ratio max-w-72 rounded-lg border-2 border-accent transition-all group-hover:cursor-pointer group-hover:border-white"
           src={image}
           alt="Project Image"
         />
