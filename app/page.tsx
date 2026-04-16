@@ -10,6 +10,13 @@ import projects from "@/app/data/projects.json";
 export default function Home() {
   return (
     <div className="relative h-screen w-screen overflow-hidden bg-black">
+      <div className="absolute inset-0 flex items-center">
+        <ProjectGallery>
+          {projects.map((project) => (
+            <ProjectCard key={project.name} {...project} />
+          ))}
+        </ProjectGallery>
+      </div>
       <div className="absolute top-0 left-0">
         <Marquee
           text="Creative Developer"
@@ -18,13 +25,6 @@ export default function Home() {
           speed={2}
           pauseOnHover
         />
-      </div>
-      <div className="absolute inset-0 flex items-center">
-        <ProjectGallery>
-          {projects.map((project) => (
-            <ProjectCard key={project.name} {...project} />
-          ))}
-        </ProjectGallery>
       </div>
       <ContactTab />
       <div className="absolute bottom-0 left-0">
