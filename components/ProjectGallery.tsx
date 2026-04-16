@@ -53,7 +53,7 @@ export default function ProjectGallery({ children }: Props) {
         velocityRef.current = -vx * dirX * 24;
       }
     },
-    { axis: "x", filterTaps: true, pointer: { touch: true } },
+    {},
   );
 
   return (

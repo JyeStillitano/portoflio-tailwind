@@ -52,10 +52,10 @@ export default function ContactTab() {
   return (
     <>
       {open && <Backdrop onClick={handleToggle} className="z-20" />}
-      <div className="pointer-events-none fixed top-20 right-0 bottom-36 z-30 flex items-center">
+      <div className="pointer-events-none fixed top-1/2 right-0 z-30 -translate-y-1/2">
         <div
           ref={drawerRef}
-          className="pointer-events-auto flex items-start shadow-xl"
+          className="pointer-events-auto flex items-start"
         >
           {/* Tab — rounded-l-full fills the full button area */}
           <IconButton
