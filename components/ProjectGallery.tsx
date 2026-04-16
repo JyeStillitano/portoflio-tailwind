@@ -48,7 +48,7 @@ export default function ProjectGallery({ children }: Props) {
     ({ delta: [dx], velocity: [vx], direction: [dirX], active, first }) => {
       if (document.body.classList.contains("modal-open")) return;
       if (first) velocityRef.current = 0;
-      xRef.current += dx * 0.2;
+      xRef.current += dx * 1.5;
       if (!active) {
         velocityRef.current = -vx * dirX * 24;
       }

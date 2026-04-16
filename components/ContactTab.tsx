@@ -52,13 +52,16 @@ export default function ContactTab() {
   return (
     <>
       {open && <Backdrop onClick={handleToggle} className="z-20" />}
-      <div className="pointer-events-none fixed right-0 top-20 bottom-36 z-30 flex items-center">
-        <div ref={drawerRef} className="pointer-events-auto flex items-start shadow-xl">
+      <div className="pointer-events-none fixed top-20 right-0 bottom-36 z-30 flex items-center">
+        <div
+          ref={drawerRef}
+          className="pointer-events-auto flex items-start shadow-xl"
+        >
           {/* Tab — rounded-l-full fills the full button area */}
           <IconButton
             label="Contact"
             onClick={handleToggle}
-            className="rounded-l-full bg-white text-brand-primary hover:text-brand-secondary"
+            className="text-brand-primary hover:text-brand-secondary rounded-l-full bg-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +81,7 @@ export default function ContactTab() {
           {/* Form panel — rounded on all corners except top-left */}
           <div
             ref={formRef}
-            className="min-w-64 w-80 max-w-[calc(100vw-4rem)] overflow-y-auto rounded-br-2xl rounded-bl-2xl rounded-tr-2xl bg-white px-6 max-h-[calc(100vh-14rem)]"
+            className="max-h-[calc(100vh-8rem)] w-80 max-w-[calc(100vw-4rem)] min-w-64 overflow-y-auto rounded-tr-2xl rounded-br-2xl rounded-bl-2xl bg-white px-6"
           >
             <MailForm />
           </div>
