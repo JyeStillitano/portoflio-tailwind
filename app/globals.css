@@ -1,4 +1,34 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@theme {
+  --color-brand-primary: #242423;
+  --color-brand-secondary: #4d85ff;
+  --color-black: #0c0a09;
+  --color-white: #f2ede8;
+
+  --font-sans: var(--font-syne), sans-serif;
+}
+
+@layer components {
+  .type-h1 {
+    @apply text-8xl leading-none font-black tracking-[-4.5];
+  }
+  .type-h2 {
+    @apply text-6xl leading-tight font-black tracking-tighter;
+  }
+  .type-h3 {
+    @apply text-4xl leading-tight font-bold tracking-tight;
+  }
+  .type-h4 {
+    @apply text-2xl leading-snug font-bold tracking-tight;
+  }
+  .type-h5 {
+    @apply text-xl leading-snug font-semibold;
+  }
+  .type-h6 {
+    @apply text-lg leading-snug font-semibold;
+  }
+  .type-p {
+    @apply text-base leading-relaxed font-normal;
+  }
+}

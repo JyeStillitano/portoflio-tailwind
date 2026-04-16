@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
-import { Inter } from "next/font/google";
+import { Syne } from "next/font/google";
+import { ToastContainer, Zoom } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
 
 export default function RootLayout({
   children,
@@ -22,8 +24,22 @@ export default function RootLayout({
   });
 
   return (
-    <html lang="en" className="">
-      <body className="m-0 h-full bg-background p-0">{children}</body>
+    <html lang="en" className={syne.variable}>
+      <body className="m-0 h-full bg-black p-0">
+        {children}
+        <ToastContainer
+          position="bottom-center"
+          autoClose={5000}
+          hideProgressBar={true}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          draggable
+          pauseOnHover
+          theme="dark"
+          transition={Zoom}
+        />
+      </body>
     </html>
   );
 }

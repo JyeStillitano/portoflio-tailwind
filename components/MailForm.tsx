@@ -1,8 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { ToastContainer, Zoom, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
 
 // Mail Form Component - Provides form for contacting email in environment variables.
 export default function MailForm() {
@@ -38,9 +37,7 @@ export default function MailForm() {
     setIsSending(true);
 
     // Sending mail toast notification.
-    const statusToast = toast.loading("Sending...", {
-      transition: Zoom,
-    });
+    const statusToast = toast.loading("Sending...");
 
     // Call email API, attempt to POST message.
     try {
@@ -61,7 +58,6 @@ export default function MailForm() {
         type: "success",
         autoClose: 4000,
         isLoading: false,
-        transition: Zoom,
       });
     } catch (error) {
       // Toast Notification - Failed
@@ -70,7 +66,6 @@ export default function MailForm() {
         type: "error",
         autoClose: 4000,
         isLoading: false,
-        transition: Zoom,
       });
       console.log(error);
     }
@@ -80,51 +75,51 @@ export default function MailForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="my-8">
-        <label className="ml-2 text-primary" htmlFor="form-name">
+      <div className="my-3">
+        <label className="text-brand-primary ml-2 text-sm" htmlFor="form-name">
           Name: *
         </label>
         <input
           type="text"
           id="form-name"
           name="name"
-          className="mt-2 w-full rounded-full border-2 border-accent bg-background px-6 py-2 text-primary"
+          className="border-brand-primary text-brand-primary mt-1 w-full rounded-full border-2 bg-white px-4 py-1.5 text-sm"
         />
       </div>
-      <div className="my-8">
-        <label className="mb-2 ml-2 text-primary" htmlFor="form-email">
+      <div className="my-3">
+        <label className="text-brand-primary ml-2 text-sm" htmlFor="form-email">
           Email: *
         </label>
         <input
           type="text"
           id="form-email"
           name="email"
-          className="mt-2 w-full rounded-full border-2 border-accent bg-background px-6 py-2 text-primary"
+          className="border-brand-primary text-brand-primary mt-1 w-full rounded-full border-2 bg-white px-4 py-1.5 text-sm"
         />
       </div>
-      <div className="my-8">
-        <label className="mb-2 ml-2 text-primary" htmlFor="form-subject">
+      <div className="my-3">
+        <label className="text-brand-primary ml-2 text-sm" htmlFor="form-subject">
           Subject: *
         </label>
         <input
           type="text"
           id="form-subject"
           name="subject"
-          className="mt-2 w-full rounded-full border-2 border-accent bg-background px-6 py-2 text-primary"
+          className="border-brand-primary text-brand-primary mt-1 w-full rounded-full border-2 bg-white px-4 py-1.5 text-sm"
         />
       </div>
-      <div className="my-8">
-        <label className="mb-2 ml-2 text-primary" htmlFor="form-message">
+      <div className="my-3">
+        <label className="text-brand-primary ml-2 text-sm" htmlFor="form-message">
           Message: *
         </label>
         <textarea
           id="form-message"
           name="message"
-          className="mt-2 h-48 w-full text-wrap rounded-xl border-2 border-accent bg-background px-4 py-2 text-primary"
+          className="border-brand-primary text-brand-primary mt-1 h-24 w-full rounded-xl border-2 bg-white px-4 py-2 text-sm"
         />
       </div>
-      <div className="absolute left-[-1000px] z-[-1] ">
-        <label className="mb-2 ml-2 text-primary" htmlFor="form-url">
+      <div className="sr-only">
+        <label className="text-brand-primary mb-2 ml-2" htmlFor="form-url">
           URL: *
         </label>
         <input
@@ -133,7 +128,7 @@ export default function MailForm() {
           name="url"
           tabIndex={-1}
           autoComplete="off"
-          className="mt-2 w-full rounded-xl border-2 border-accent bg-background p-2 text-content"
+          className="border-brand-primary mt-2 w-full rounded-xl border-2 bg-white p-2 text-white"
         />
       </div>
       <div className="flex justify-center">
@@ -141,20 +136,9 @@ export default function MailForm() {
           type="submit"
           value="Send"
           disabled={sending}
-          className="m-4 rounded-full bg-primary px-6 py-2 font-semibold text-content hover:cursor-pointer hover:bg-black hover:shadow-lg disabled:cursor-not-allowed disabled:bg-disabled disabled:text-black"
+          className="bg-brand-primary m-4 rounded-full px-6 py-2 font-semibold text-white hover:cursor-pointer hover:bg-black hover:shadow-lg disabled:cursor-not-allowed disabled:bg-gray-600 disabled:text-black"
         />
       </div>
-      <ToastContainer
-        position="bottom-center"
-        autoClose={5000}
-        hideProgressBar={true}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        draggable
-        pauseOnHover
-        theme="dark"
-      />
     </form>
   );
 }

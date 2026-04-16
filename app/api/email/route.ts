@@ -47,15 +47,15 @@ export async function POST(request: NextRequest) {
       `,
     })
 
-    return NextResponse.json({ 
+    return NextResponse.json({
       status: 200,
       message: "Mail successfully delivered. "
     })
 
   } catch (error) {
-    return NextResponse.json({ 
+    return NextResponse.json({
       status: 500,
-      message: "Mail failed to be delivered." 
+      message: "Mail failed to be delivered."
     })
   }
 }

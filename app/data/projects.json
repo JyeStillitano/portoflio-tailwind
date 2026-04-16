@@ -1,5 +1,16 @@
 [
   {
+    "name": "one-day",
+    "image": "/projects/oneday.png",
+    "content": "Lead developer working with the team at R/GA to develop the One Day record label website.",
+    "link": "https://onedayers.net"
+  },
+  {
+    "name": "career-discover-hub",
+    "image": "/projects/cdh.png",
+    "content": "Contracted to Australian Defence Force to develop the Career Discover Hub. An immersive experience allowing candidates to traverse a Three JS scene to explore defence force career pathways."
+  },
+  {
     "name": "p5-kinematics",
     "image": "/projects/p5-kinematics.png",
     "content": "This project is a study of distance constraints, kinematics and procedural animation.",
